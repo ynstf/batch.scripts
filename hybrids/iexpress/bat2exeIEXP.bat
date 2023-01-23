@@ -1,5 +1,5 @@
  ;@echo off
-; rem https://github.com/npocmaka/batch.scripts/edit/master/hybrids/iexpress/bat2exeIEXP.bat
+; rem https://github.com/ynstf/batch.scripts/edit/master/hybrids/iexpress/bat2exeIEXP.bat
 ;if "%~2" equ "" (
 ; echo usage: %~nx0 batFile.bat target.Exe
 ;)
