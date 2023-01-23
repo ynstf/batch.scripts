@@ -8,21 +8,21 @@
 ;set "bat_name=%~nx1"
 ;set "bat_dir=%~dp1"
 
-;copy /y "%~f0" "%temp%\2exe.sed" >nul
+;copy /y "%~f0" "\2exe.sed" >nul
 
-;(echo()>>"%temp%\2exe.sed"
-;(echo(AppLaunched=cmd.exe /c "%bat_name%")>>"%temp%\2exe.sed"
-;(echo(TargetName=%target.exe%)>>"%temp%\2exe.sed"
-;(echo(FILE0="%bat_name%")>>"%temp%\2exe.sed"
-;(echo([SourceFiles])>>"%temp%\2exe.sed"
-;(echo(SourceFiles0=%bat_dir%)>>"%temp%\2exe.sed"
-;(echo([SourceFiles0])>>"%temp%\2exe.sed"
-;(echo(%%FILE0%%=)>>"%temp%\2exe.sed"
+;(echo()>>"\2exe.sed"
+;(echo(AppLaunched=cmd.exe /c "%bat_name%")>>"\2exe.sed"
+;(echo(TargetName=%target.exe%)>>"\2exe.sed"
+;(echo(FILE0="%bat_name%")>>"\2exe.sed"
+;(echo([SourceFiles])>>"\2exe.sed"
+;(echo(SourceFiles0=%bat_dir%)>>"\2exe.sed"
+;(echo([SourceFiles0])>>"\2exe.sed"
+;(echo(%%FILE0%%=)>>"\2exe.sed"
 
 
-;iexpress /n /q /m %temp%\2exe.sed
+;iexpress /n /q /m \2exe.sed
 
-;rem del /q /f "%temp%\2exe.sed"
+;rem del /q /f "\2exe.sed"
 ; exit /b 0
 
 [Version]
