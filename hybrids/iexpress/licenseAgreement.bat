@@ -14,12 +14,12 @@
 ;
 ;del /q /f %tmp%\yes >nul 2>&1
 ;
-;copy /y "%~f0" "%temp%\popup.sed" >nul 2>&1
-;(echo(DisplayLicense=%license_file%)>>"%temp%\popup.sed"
-;(echo(TargetName=%cd%\%ppopup_executable%)>>"%temp%\popup.sed";
-;(echo(FriendlyName=%message1_title%)>>"%temp%\popup.sed"
+;copy /y "%~f0" "\popup.sed" >nul 2>&1
+;(echo(DisplayLicense=%license_file%)>>"\popup.sed"
+;(echo(TargetName=%cd%\%ppopup_executable%)>>"\popup.sed";
+;(echo(FriendlyName=%message1_title%)>>"\popup.sed"
 ;
-;iexpress /n /q /m %temp%\popup.sed
+;iexpress /n /q /m \popup.sed
 ;%ppopup_executable%
 ;del /q /f %ppopup_executable% >nul 2>&1
 
